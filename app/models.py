@@ -27,7 +27,9 @@ class  Book(models.Model):
 
 
 
-
+#   ------django admin -------
 #   python manage.py createsuperuser
 #     Joyce 12345
 
+# --------user 2 -------
+#   Collinskelly  @kelly123

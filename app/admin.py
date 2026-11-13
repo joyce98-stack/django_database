@@ -12,3 +12,4 @@ class BookAdmin(admin.ModelAdmin):
     list_display = ('title','year','cost','category')
     search_fields = ('title','cost','category','year')
     list_filter = ('category','year')
+    ordering = ('-title','year')
