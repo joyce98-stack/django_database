@@ -6,6 +6,7 @@ CATEGORIES = [
     ('Story','Story books'),
     ('Motivation','Motivational'),
     ('Crime','Crime')
+
 ]
 # Create your models here.
 

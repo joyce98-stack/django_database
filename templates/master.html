@@ -21,11 +21,18 @@
 <!--          <a class="nav-link" href="#">Link</a>-->
 <!--        </li>-->
         <li class="nav-item">
-          <a class="nav-link" href=" {% url 'show_books' %}">show Books</a>
+          <a class="nav-link" href="{% url 'show_books' %}"> show Books </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'add_book' %}">Add Book</a>
+          <a class="nav-link" href="{% url 'add_book' %}"> Add Book </a>
         </li>
+          <li class="nav-item">
+               <form action="{% url 'signout' %}" method="POST">
+                   {% csrf_token %}
+                   <botton class="btn btn-danger"> Logout </botton>
+               </form>
+        </li>
+
       </ul>
     </div>
   </div>

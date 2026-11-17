@@ -9,10 +9,11 @@
         	 <img src="{{ book.cover.url }}" alt="">
         {% endif %}
        <p> {{ book.isbn }}</p>
-        <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete</a>
+        {% if perms.app.delete_book %}
+        	 <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete</a>
+        {% endif %}
         <a href="{% url 'edit_book' book.id %}" class="btn btn-success">Edit</a>
         <hr>
     {% endfor %}
-
 </div>
 {% endblock %}
